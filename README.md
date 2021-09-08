@@ -20,11 +20,17 @@ In our answer augmentation, we append all alias entities of the original answer 
 To save you the trouble of these preprocessing, we directly provide all the <b>processed data</b>. After you download and unzip the file, you should see these directories:
 
 -`nqopen`: the original NQ dataset. 
+
 -`nq_multi`: the augmented NQ dataset.
+
 -`triviaqa`: the original TriviaQA dataset. Note that in this version we only take the original <b>single</b> gold answer (the string in the `data["Answer"]["Value"]` field in the original [TriviaQA release](https://github.com/mandarjoshi90/triviaqa/blob/master/samples/triviaqa_sample.json)). And it does not include the `"Aliases"` field in the answer list. 
+
 -`triviaqa_alias`: the TriviaQA dataset with the answer strings in the `"Aliases"` field of the original TriviaQA released combined into the answer list. These answer aliases are mined from Wikipedia, by the original authors [Mandar et al.](https://github.com/mandarjoshi90/triviaqa).
+
 -`triviaqa_multi`: the TriviaQA dataset augmented with answer aliases from Freebase, this is mined by ourselves, as a comparison to the original answer aliases in Mandar et al.
+
 -`squad_open`: the original SQuAD dataset, without paired passages.
+
 -`squad_open_multi`: the SQuAD dataset augmented with answer aliases from Freebase.
 
 In each directory, you should see the train/dev/test.json files. In the answer list for each question, the first answer string is always the original gold answer, and all answers following that are its aliases mined from knowledge bases. You can take a look at the actual data and see how the answer aliases look like, and be aware that some aliases may be noisy (it's just impossible to have all aliases being correct aliases to the answers), we have provided a detailed analysis in the paper showing that in most cases the noises are acceptable and doesn't impact the actual performance much. 
