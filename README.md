@@ -1,4 +1,4 @@
-# Answer Equivalence for Open=Domain Question Answering
+# Answer Equivalence for Open-Domain Question Answering
 
 This repo contains the code to reproduce the results in the our EMNLP paper <b>What’s in a Name? Answer Equivalence For Open-Domain Question Answering</b>. The codebase is largely adapted from [Min et al.](https://github.com/shmsw25/AmbigQA/tree/master/codes). All our experiments are done with BERT-base-uncased as the backbone. 
 
