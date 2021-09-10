@@ -17,7 +17,7 @@ We used three datasets in our paper: NQ, TriviaQA and SQuAD. Note that we treat 
 
 In our answer augmentation, we append all alias entities of the original answer entity to the correct answer list. We then unify the format of all these three datasets so that the training can be run easily with the same data processor and training command. 
 
-To save you the trouble of these preprocessing, we directly provide all the <b>processed data</b>. After you download and unzip the file, you should see these directories:
+To save you the trouble of these preprocessing, we directly provide all the <b>processed data</b>. The download link is here: [Google Drive](https://drive.google.com/file/d/1ddqS40Y3cBPsmiqLVl8mFoBK4VHgxUIu/view?usp=sharing). After you download and unzip the file, you should see these directories:
 
 -`nqopen`: the original NQ dataset. 
 
